@@ -32,6 +32,21 @@ function startGame(){
 
 };
 
+// Can not figure out how to restart the game each time a round is over here is the code for it below
+// function restartGame(){
+// 	$("#crystalOne").attr("data-value", crystals.one);
+// 	$("#crystalTwo").attr("data-value", crystals.two);
+// 	$("#crystalThree").attr("data-value", crystals.three);
+// 	$("#crystalFour").attr("data-value", crystals.four);
+
+// console.log(restartGame)
+// startGame();
+
+// }
+
+
+
+
 	function compareScore(){
 		for(var i = 0; i < computerChoice; i++){
 			if(userScore == computerChoice){
@@ -93,5 +108,8 @@ function startGame(){
         $("#totalScore").html(userScore);
         compareScore();
     })
+
+
+
 
 });
