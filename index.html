@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystals Collector Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="container">
+        <h1>Crystals Collector Game</h1>
+
+        <div id="instructions">
+        <p>You Will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal</p>
+
+        </div> 
+            <div id="scoreNeeded"><span id="randomNumber"></span></div>
+            <div id="scoreboard">
+                <p>Wins: <span id="wins"></span>
+                 </p>
+                <p>Loses:
+                    <span id="losses"></span>
+                </p>    
+            </div>            
+
+                <div id="buttons">
+                    <img id="crystalOne" src="assets/images/blue.jpg">
+                    <img id="crystalTwo" src="assets/images/pink.jpg">
+                    <img id="crystalThree" src="assets/images/purple.png">
+                    <img id="crystalFour" src="assets/images/yellow.jpg">
+
+               </div>  
+
+                <div id="totalscore">
+                    <div class= "score">
+                        <p>Your total score: <span id="totalScore"></span></p>
+                    </div>
+                <div class="scoreDisplay">
+                    <p class="scoreDisplayChild"></p>
+                </div>             
+    </div>
+</div>
+
+
+<!-- Link to Jquery -->
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<!-- Link to Javascript -->
+<script src="assets/javascript/game.js"></script>
+
+
+<footer>
+    <div id="footer">
+        <p>&copy; Copyright 2017 Graham Lawing</p>
+    </div>
+</footer>
+
+	
+</body>
+</html>
